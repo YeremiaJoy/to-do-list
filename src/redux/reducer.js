@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialValue = [];
 
+//reducer and state management todo list
 export const todoReducer = createSlice({
   name: "todo",
   initialState: { value: initialValue },

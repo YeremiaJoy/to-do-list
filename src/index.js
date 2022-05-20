@@ -7,12 +7,12 @@ import reportWebVitals from "./reportWebVitals";
 //SETUP REDUX
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import todoReducer from "./redux/reducer"
+import todoReducer from "./redux/reducer";
 
 const store = configureStore({
   reducer: {
-    todo : todoReducer
-  }
+    todo: todoReducer,
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

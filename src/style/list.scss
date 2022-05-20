@@ -1,0 +1,39 @@
+.card-container {
+  display: grid;
+  gap: 15px;
+  padding: 0 24px;
+}
+.card-container .ant-card-body {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+.card-content{
+  width: 100%;
+}
+.action-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  float: right;
+}
+.title {
+  font-weight: 600;
+  font-size: 16px;
+}
+.desc {
+  margin-bottom: 10px;
+}
+.createdAt {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .action-button {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
